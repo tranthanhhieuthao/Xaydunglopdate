@@ -30,19 +30,16 @@ let MyDate= function (day,month,year) {
         return day+'/'+month+'/'+year;
     }
 };
-let date = new MyDate();
-// let day = date.getDay();
-// let month = date.getMonth();
-// let year = date.getYear();
-// alert(day + "/" + month + "/" +year);
+let date = new MyDate(12,5,2018);
+let day = date.getDay();
+let month = date.getMonth();
+let year = date.getYear();
+alert(day + "/" + month + "/" +year);
 date.setDay(15);
 date.setMonth(6);
 date.setYear(2020);
 date.setDate(15,8,2030);
-let day = date.getDay();
- let month = date.getMonth();
- let year = date.getYear();
-alert(day + "/" + month + "/" +year);
+alert(date.day + "/" + date.month + "/" +date.year);
 let result= date.ToString(12,12,2016);
 alert(result);
 
